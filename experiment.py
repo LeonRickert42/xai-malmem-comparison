@@ -465,13 +465,13 @@ fig.savefig(FIG_DIR / "fig4_jaccard.pdf")
 fig.savefig(FIG_DIR / "fig4_jaccard.png", dpi=200)
 plt.close(fig)
 
-# Fig. 5: Feature-Häufigkeit (Top-10 pro Explainer für RF) --------------- #
-def _top_features(df_ff, col, n=10):
+# Fig. 5: Feature-Häufigkeit (Top-15 pro Explainer für RF) --------------- #
+def _top_features(df_ff, col, n=15):
     return df_ff.sort_values(col, ascending=False).head(n).iloc[::-1]
 
 rf_ff = results["RF"]["feature_freq"]
-top_shap = _top_features(rf_ff, f"SHAP_top{FREQUENCY_K}_freq", n=10)
-top_lime = _top_features(rf_ff, f"LIME_top{FREQUENCY_K}_freq", n=10)
+top_shap = _top_features(rf_ff, f"SHAP_top{FREQUENCY_K}_freq", n=15)
+top_lime = _top_features(rf_ff, f"LIME_top{FREQUENCY_K}_freq", n=15)
 
 fig, axes = plt.subplots(1, 2, figsize=(11, 4.2))
 axes[0].barh(top_shap["Feature"], top_shap[f"SHAP_top{FREQUENCY_K}_freq"],

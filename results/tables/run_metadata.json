@@ -25,7 +25,7 @@
   },
   "classifiers": {
     "RF": {
-      "training_time_s": 0.4534784170000421,
+      "training_time_s": 0.47278637499402976,
       "classification_metrics": {
         "Accuracy": 1.0,
         "Precision": 1.0,
@@ -40,12 +40,12 @@
         "TP": 5860
       },
       "shap_time_s": {
-        "median": 0.0003911669999752121,
-        "mean": 0.00040003375900107585
+        "median": 0.0003903754986822605,
+        "mean": 0.00040000412707740906
       },
       "lime_time_s": {
-        "median": 0.037400937500081,
-        "mean": 0.037557707713002174
+        "median": 0.037029146002169,
+        "mean": 0.03692691808193922
       },
       "fidelity_mean_by_k": {
         "SHAP": {
@@ -67,7 +67,7 @@
       "robustness_lime_mean_pairwise_jaccard_top5": 0.8444444444444446
     },
     "XGB": {
-      "training_time_s": 0.2067565410000043,
+      "training_time_s": 0.20506783400196582,
       "classification_metrics": {
         "Accuracy": 0.999914675767918,
         "Precision": 0.999829380651766,
@@ -82,12 +82,12 @@
         "TP": 5860
       },
       "shap_time_s": {
-        "median": 0.0022255210000139414,
-        "mean": 0.002230472257001338
+        "median": 0.002114292001351714,
+        "mean": 0.0021295300969359234
       },
       "lime_time_s": {
-        "median": 0.023681062499974814,
-        "mean": 0.023756996962999436
+        "median": 0.02240637499926379,
+        "mean": 0.022505848415035872
       },
       "fidelity_mean_by_k": {
         "SHAP": {
