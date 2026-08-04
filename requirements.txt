@@ -1,0 +1,23 @@
+# FW1 Experiment — Python dependencies
+# Tested on macOS (Apple Silicon), Python 3.11+
+
+# Core numerics / data handling
+numpy>=1.26
+pandas>=2.2
+scipy>=1.11
+
+# Machine Learning
+scikit-learn>=1.4
+xgboost>=2.0                  # zweiter baumbasierter Klassifikator (Gradient Boosting)
+
+# Explainability
+shap>=0.44
+lime>=0.2.0.1
+
+# Plotting
+matplotlib>=3.8
+seaborn>=0.13
+
+# Jupyter environment
+jupyterlab>=4.0
+ipykernel

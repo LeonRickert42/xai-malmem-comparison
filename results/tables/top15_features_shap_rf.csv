@@ -1,0 +1,16 @@
+Feature,SHAP_top5_freq,LIME_top5_freq
+svcscan.nservices,0.999,1.0
+svcscan.shared_process_services,0.999,1.0
+svcscan.kernel_drivers,0.997,0.0
+dlllist.avg_dlls_per_proc,0.603,0.0
+handles.avg_handles_per_proc,0.596,0.996
+svcscan.process_services,0.364,1.0
+pslist.avg_handlers,0.293,0.314
+malfind.commitCharge,0.049,0.174
+handles.nevent,0.048,0.21
+handles.nsection,0.043,0.0
+handles.nfile,0.004,0.0
+ldrmodules.not_in_load_avg,0.001,0.0
+callbacks.ncallbacks,0.001,0.001
+pslist.avg_threads,0.001,0.0
+psxview.not_in_deskthrd,0.001,0.0

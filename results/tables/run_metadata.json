@@ -1,0 +1,112 @@
+{
+  "random_state": 42,
+  "dataset": {
+    "path": "data/MalMem2022.csv",
+    "samples_total": 58596,
+    "samples_train": 46876,
+    "samples_test": 11720,
+    "features": 55,
+    "class_balance_test": {
+      "benign": 5860,
+      "malware": 5860
+    }
+  },
+  "xai_subset_size": 1000,
+  "xai_subset_per_class": 500,
+  "top_k_values": [
+    3,
+    5,
+    10
+  ],
+  "frequency_k": 5,
+  "robustness": {
+    "subset_size": 30,
+    "n_runs": 5
+  },
+  "classifiers": {
+    "RF": {
+      "training_time_s": 0.4534784170000421,
+      "classification_metrics": {
+        "Accuracy": 1.0,
+        "Precision": 1.0,
+        "Recall": 1.0,
+        "F1": 1.0,
+        "ROC-AUC": 1.0
+      },
+      "confusion_matrix": {
+        "TN": 5860,
+        "FP": 0,
+        "FN": 0,
+        "TP": 5860
+      },
+      "shap_time_s": {
+        "median": 0.0003911669999752121,
+        "mean": 0.00040003375900107585
+      },
+      "lime_time_s": {
+        "median": 0.037400937500081,
+        "mean": 0.037557707713002174
+      },
+      "fidelity_mean_by_k": {
+        "SHAP": {
+          "3": 0.25619000000000003,
+          "5": 0.34451,
+          "10": 0.41430999999999996
+        },
+        "LIME": {
+          "3": 0.22211999999999998,
+          "5": 0.26615,
+          "10": 0.31714
+        }
+      },
+      "jaccard_shap_lime": {
+        "3": 0.48750000000000004,
+        "5": 0.4575396825396825,
+        "10": 0.40155467571644043
+      },
+      "robustness_lime_mean_pairwise_jaccard_top5": 0.8444444444444446
+    },
+    "XGB": {
+      "training_time_s": 0.2067565410000043,
+      "classification_metrics": {
+        "Accuracy": 0.999914675767918,
+        "Precision": 0.999829380651766,
+        "Recall": 1.0,
+        "F1": 0.9999146830475215,
+        "ROC-AUC": 0.9999999417582033
+      },
+      "confusion_matrix": {
+        "TN": 5859,
+        "FP": 1,
+        "FN": 0,
+        "TP": 5860
+      },
+      "shap_time_s": {
+        "median": 0.0022255210000139414,
+        "mean": 0.002230472257001338
+      },
+      "lime_time_s": {
+        "median": 0.023681062499974814,
+        "mean": 0.023756996962999436
+      },
+      "fidelity_mean_by_k": {
+        "SHAP": {
+          "3": 0.09813903272151947,
+          "5": 0.2171734720468521,
+          "10": 0.5021434426307678
+        },
+        "LIME": {
+          "3": 0.10131477564573288,
+          "5": 0.13857930898666382,
+          "10": 0.3915059566497803
+        }
+      },
+      "jaccard_shap_lime": {
+        "3": 0.5732,
+        "5": 0.3978412698412699,
+        "10": 0.46346224853577794
+      },
+      "robustness_lime_mean_pairwise_jaccard_top5": 0.7279365079365081
+    }
+  }
+}
